@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import S from './logos/logo-s-large.jpeg';
 import M from './logos/logo-m-large.jpeg';
 import SD from './logos/logo-sd-large.jpeg';
@@ -24,7 +23,7 @@ const Card = ({ hangar_id, name, lastname, parti, photo, location, info }) => {
                 : parti === "L" ? L
                 : parti === "MP" ? MP
                 : null
-            }></img>
+            } alt="parti-logo"></img>
         </div>
         <h3 className="text-xl text-gray-900 font-medium leading-8">{name} {lastname}</h3>
         <p className="inline-block bg-gray-200 rounded-full m-3 px-5 py-1 text-sm font-semibold text-gray-500 mr-2 mb-2">{parti}</p>
